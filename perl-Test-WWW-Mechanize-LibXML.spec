@@ -8,7 +8,7 @@ Release:	6
 Summary:	Use HTML::TreeBuilder::LibXML for testing
 License:	MIT
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/%{upstream_name}-%{upstream_version}.tar.xz
 
 BuildRequires:	perl-devel
