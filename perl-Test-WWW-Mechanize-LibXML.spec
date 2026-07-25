@@ -1,15 +1,15 @@
 %define upstream_name    Test-WWW-Mechanize-LibXML
-%define upstream_version v0.0.2
+%define upstream_version 0.0.6
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	6
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Use HTML::TreeBuilder::LibXML for testing
 License:	MIT
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/%{upstream_name}-%{upstream_version}.tar.xz
+Url:		https://github.com/shlomif/test-www-mechanize-libxml
+Source0:	https://cpan.metacpan.org/authors/id/S/SH/SHLOMIF/Test-WWW-Mechanize-LibXML-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
