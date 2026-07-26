@@ -1,15 +1,13 @@
 %define upstream_name    Test-WWW-Mechanize-LibXML
-%define upstream_version 0.0.6
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.0.6
+Release:	2
 
 Summary:	Use HTML::TreeBuilder::LibXML for testing
 License:	MIT
 Group:		Development/Perl
 Url:		https://github.com/shlomif/test-www-mechanize-libxml
-Source0:	https://cpan.metacpan.org/authors/id/S/SH/SHLOMIF/Test-WWW-Mechanize-LibXML-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/S/SH/SHLOMIF/Test-WWW-Mechanize-LibXML-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -26,7 +24,7 @@ to utilize the HTML::TreeBuilder::LibXML manpage to perform XPath and the
 HTML::TreeBuilder manpage queries on the tree.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
